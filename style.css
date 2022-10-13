@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				font-family: 'Nunito', sans-serif;
+}
+html,body{
+				
+}
+#alert{
+border-radius: 8px;
+padding: 5px;
+padding-bottom: 2px;
+display: none;
+justify-content: space-between;
+background: transparent;
+background-color: #3cff2b;
+border: 2px green;
+width: 100vw;
+				position: absolute;
+				transition: 1s;
+}
+#modalt{
+display: none;
+background-color: #3cff2b;
+border: 2px green;
+border-radius: 7px;
+letter-spacing: 2px;
+font-size: 16px;
+padding: 4px;
+}
+#alert2{
+				border-radius: 7px;
+padding: 5px;
+padding-bottom: 2px;
+display: none;
+justify-content: space-between;
+background: transparent;
+background-color: #ff001f;
+border: 2px green;
+width: 100vw;
+				position: absolute;
+				transition: 1s;
+}
+#cross2,#cross3{
+				display: block;
+				padding-top: 0;
+}
+#navv{
+				display: block;
+				height: 35px;
+				background-color:black;
+}
+.navh3{
+				color: white;
+				position: absolute;
+				top:3px;
+				left:40px;
+				
+}
+.navimg{
+				object-fit: cover;
+				color: white;
+				width: 30px;
+				height: 30px;	
+				top: 2px;
+				left: 2px;
+				position: absolute;
+				border-radius: 2000px;
+}
+.img{
+				object-fit: cover;
+				color: white;
+				width: 30px;
+				height: 30px;
+				border-radius: 2000px;
+				margin: 2px;
+				margin-left: 30px;
+				margin-right:4px;
+				margin-top: 10px;				
+}
+.h3r{
+				display: flex;
+				flex-direction: column;
+				color: white;
+				padding-bottom: 20px;
+}
+.ul{
+				display: none;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background: black;
+				border-bottom: 3px solid grey;
+
+}
+.cross{
+  display: inline-block;
+  color: #fff;
+  height: 10px;
+  width: 4px;
+  position: absolute;
+  top:2px;
+  right: 15px;
+}
+
+
+ul li{
+				list-style: none;
+				margin: 2px;
+				margin-top:6px;
+				margin-bottom: 20px;
+}
+ul li a{
+				color: white;
+				text-decoration: none;
+				margin: 2px;
+}
+.container{
+				height: 530px;
+				width: 100vw;
+				opacity: 0.6;
+				animation: slider 50s infinite linear ;
+				animation-timing-function: linear
+}
+.burger{
+				position: absolute;
+				height: 30px;
+				width: 35px;
+				top: 5px;
+				right: 5px;
+}
+.line{
+				background-color:white;
+				border-radius:3px;				
+				margin: 3px;
+				width: 30px;
+				height:4px;
+}
+#h1r{
+				color: white;
+				display: flex;
+				padding-top: 30px;
+				align-items: center;
+				justify-content: center;
+}
+.h2r{
+				color: white;
+				padding-top: 30px;
+				padding-left: 5px;
+}
+.notearea{
+				border: 2px solid white;
+				height: 380px;
+}
+form h3{
+				color: White;
+				padding: 10px;
+}
+#title,#description{
+				padding: 4px;
+				font-size: 15px;
+				margin-left:10px ;
+				border-radius: 10px;
+				height: 20px;
+				width: 80%
+				border:2px solid grey;
+}
+#description{
+				border: 2px solid grey;
+				margin: 10px;
+				margin-top: 5px;
+				border-radius: 10px;
+				height: 200px;
+				width: 80%;
+}
+.yournotes{
+				background-color: #d4d4d4;
+				opacity: 1;
+}
+.yourh2{
+				font-size: 30px;
+				color: black ;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding-top: 10px;
+}
+.shownote{
+				margin-top: 10px;
+				margin-left: 40px;
+				border: 2px solid white;
+				border-radius: 10px;
+				height: 350px;
+				width:300px;
+				margin-bottom: 4px;
+}
+.h13{
+				font-size: 30px;
+				color: black;
+				padding: 2px;
+				text-align: center;
+				border-bottom: 2px solid white;
+}
+.desc{
+				font-size: 16px;
+				margin: 6px;
+}
+.btn,.btn1{
+				border: 2px solid white;
+				border-radius: 10px;
+				padding: 4px;
+				margin-left: 100px;	
+}
+.btn{
+				margin-top: 185px;
+}
+.btn1{
+				margin: 12px;
+				margin-top: 0px;
+}
+.dummy{
+				color:black;
+				border-top: 2px solid white;
+				margin: 5px;
+				padding-top: 10px;
+				padding-bottom: 200px;
+}
+
+@media screen and (min-width:768px){
+				#btn1{
+								position: absolute;
+								top: 540px;
+								left: 5px;
+				}
+				.cross{
+								display: none;
+				}
+				#yn{
+								display: flex;
+								flex-direction: row;
+								flex-wrap: wrap;
+				}
+				.burger{
+								display: none;
+				}
+				.ul{
+				display:flex;
+								flex-direction: row;
+								padding-top: 6px;
+								font-size: 20px;
+								font-weight: bolder;
+				padding-left: 20px;
+				}
+				.ul li{
+								padding-left: 10px;
+								padding-right: 10px;
+				}
+				.h3r{
+						display: none;
+				
+				}
+				#navv{
+				padding: 0;
+								height: 0px;
+				}
+				.navimg{
+								height: 50px;
+								width: 50px;
+								margin-top: 2px;
+				}
+				.navh3{
+									margin-top: 9px;
+									margin-left: 15px;
+								font-size: 20px;
+				}
+				.ul li:hover{
+								color: blue;
+				}
+				#h1r{
+								font-size: 50px;
+								padding-top: 20px;
+								padding-bottom: 0;
+				}
+				.dummy{
+				text-align: center;
+				width: 100vw;
+				height: 50vh
+				}
+}
+.modal-bg{
+
+display: flex;
+				justify-content: center;
+				align-items: center;
+				top: 0;
+				position: absolute;
+				height: 100vh;
+				width: 100vw;
+				background-color: rgba(0,0,0,0.6);
+				visibility: hidden;
+				opacity: 0;
+				transition: visibility 0s,opacity 0.5s;
+}
+.modal h1{
+				display: block;
+				text-align: center;
+				border-bottom: 2px solid black;
+				margin-bottom: 10px;
+}
+.modalcross{
+				position: relative;
+				top: -95%;
+				text-align: right;
+}
+.modal{
+			
+				border: 2px solid black;
+				border-radius: 20px;
+				padding: 10px;
+				margin: 10px;
+				display: flex;
+				flex-direction: column;
+				height: 500px;
+				width: 80%;
+				color: black;
+				background-color: white;			
+				
+}
+.modalact{
+				visibility: visible;
+				opacity: 1;
+}
+.modal input,.modal textarea{
+				border: 2px solid black;
+				border-radius: 20px;
+				margin-bottom: 10px;
+				font-size: 15px;
+				padding: 6px;
+}
+@keyframes slider {
+				0%{
+								background: center / cover no-repeat url("Background.jpg");
+				}
+			
+				35%{
+								background: center / cover no-repeat url("2.jpg");
+				}
+				65%{
+								background: center / cover no-repeat url("1.jpg");
+				}
+				100%{
+										background: center / cover no-repeat url("3.jpg");
+				}
+	
+}

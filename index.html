@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>NotesApp</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<link rel="stylesheet" href="style.css"></link>
+				
+</head>
+<body>
+				<nav class="navbar1">
+								<div id="navv">
+								<h3 class="navh3">MakeNotes</h3>			
+								<img class="navimg" src="images.png" alt="noteIcon"></img>
+								<div class="burger" onclick="showmenu()">
+												<div class="line"></div>
+												<div class="line"></div>
+												<div class="line"></div>
+								</div>				
+								</div>	
+								<ul class="ul" id="ul">
+												<div onclick="exitmenu()" class="cross">&#x2717</div>
+												<h3 class="h3r"><img class="img" src="images.png" alt="noteIcon"></img>MakeNotes</h3>
+												<li><a href="#h1">Home</a></li>
+												<li><a href="#yr">Your Notes</a></li>
+												<li><a href="#" id="con">Contact Us</a></li>
+								</ul>
+				</nav>
+				<div class="container">
+								<div class="alert" id="alert">
+									<p><strong>Success!</strong>Your note has been added successfully.<p>
+								<div id="cross2" class="cross2">&#x2717</div>
+								</div>
+								<div class="alert2" id="alert2">
+									<p><strong>Failure!</strong>Your note has not been submitted.<p>
+								<div id="cross3" class="cross3">&#x2717</div>
+								</div>
+								<h1 id="h1r">Welcome to MakeNotes</h1>
+								<h2 class="h2r" id="h2r">Add A Note</h2>
+								<div class="notearea">
+												<form id="form" >
+																<h3 id="h3title">Enter Title</h3>
+																<input type="text" name="title" id="title" placeholder="Enter the title">
+																<h3>Enter description</h3>
+																<textarea id="description" placeholder="Enter the description for the note"></textarea>
+												<button type="submit" class="btn1" id="btn1">Add note</button>
+												</form></div>
+						<div class="yournotes">
+										<h2 class="yourh2" id="yr">Your Notes</h2>
+										<div id="yn">
+														<h3 class="dummy">Nothing to show here.Please start adding some notes.</h3>
+				</div>
+										</div>
+						</div>
+				</div>
+		
+				<div class="modal-bg" id="modb">
+								<div class="modal">
+												<h1>Contact Us</h1>
+												<div class="alert" id="modalt">
+									<p><strong>Success!</strong>Your query has been submitted successfully.<p>												
+								</div>
+												<label for="name">Name:</label>
+												<input type="text" id="name" name="name" placeholder="Enter your name">
+												<label for="email">Email:</label>
+												<input type="email" name="email" id="email" placeholder="Enter your email">
+												<label for="query">Your query:</label>
+												<textarea rows="10" name="query" id="query" placeholder="Enter your query"></textarea>
+												<button class="btn1" id="modsub">Submit</button>
+												<div class="modalcross" id="modcross">&#x2717</div>
+								</div>
+				</div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -71,7 +71,7 @@ width: 100vw;
 }
 .img{
 				object-fit: cover;
-				color: white;
+				color: #fff;
 				width: 30px;
 				height: 30px;
 				border-radius: 2000px;
